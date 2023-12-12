@@ -29,3 +29,9 @@ FROM invoice
 WHERE billing_state IN ('CA', 'TX', 'AZ');
 -- or SELECT SUM(total) FROM invoice;  for total of ALL orders
 
+UPDATE invoice
+SET total = 24
+WHERE invoice_id = 5;
+
+DELETE FROM invoice WHERE invoice_id = 1;
+-- can't do this b/c it's dependent on other stuff....
