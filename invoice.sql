@@ -35,3 +35,4 @@ WHERE invoice_id = 5;
 
 DELETE FROM invoice WHERE invoice_id = 1;
 -- can't do this b/c it's dependent on other stuff....
+-- Delete the invoice with an invoice_id of 1.
